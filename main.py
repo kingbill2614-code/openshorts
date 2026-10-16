@@ -1997,7 +1997,6 @@ def get_viral_clips(transcript_result, video_duration):
                   "(set it, or point LLM_BASE_URL at an OpenAI-compatible server).")
             return None
         client = genai.Client(api_key=api_key)
-        model_name = os.environ.get("GEMINI_MODEL") or 'gemini-3.1-flash-lite'
     print(f"\U0001f916  Model: {model_name} | language: {language}")
 
     # Full word list — ground truth for snapping cut points.
